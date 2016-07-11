@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>NYC Safety</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-fUMURLTdEcpeYHly3PAwggI3l2UvdHNg/I+8LRph7hLDcAZm77YfDx3Tjum9d3vK" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">NYC Safety</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.nyu.edu">NYU</a></li>
+            <li><a href="http://cusp.nyu.edu">CUSP</a></li>
+            <li><a href="http://engineering.nyu.edu">Tandon</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar-default -->
+
+    <!-- Jumbotron Div containing Project Overview -->
+    <div class="jumbotron">
+      <h1>Manhattan Crash Hotspots</h1>
+      <p>Crash hotspots are not simply the one with the most crashes but those less safe than “similar” sites as a result of site-specific deficiency. Potential for Safety Improvement (PSI), defined as the expected crash count of one site minus the estimated crash count of “similar” sites, has been used in the safety literature as a measure to identify crash hotspots. The safety effects of exposure indicators (e.g. traffic volume, road length) can be accounted for and thus PSI can capture the portion of crashes which are caused by unobserved site-specific risk factors. We adopt the concept of PSI and propose a new hotspot ranking criterion Weighted Potential for Safety Improvement (WPSI), which considers the different costs of crashes with different injury severity levels. WPSI takes into account two important factors that are generally ignored in hotspot identification, i.e., injury severity and effects of exposure indicators.</p>
+      <h5>NOTE: This work is currently in progress and is NOT available for distribution, publication or reuse. For more information please email: <a href="mailto:kun.xie@nyu.edu">kun.xie@nyu.edu</a></h5>
+    </div>
+    <!-- REDI Score Options Buttons -->
+    <div class="row">
+      <div class="col-md-12 rediOptions">
+        <h3>Select a crash hotspot ranking criterion</h3>
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default" id="eqWeight">Crash Frequency</button>
+          <button type="button" class="btn btn-default" id="socInf">Crash Cost</button>
+          <button type="button" class="btn btn-default" id="phyInf">Weighted Potential for Safety Improvement</button>
+        </div>
+        <br/>
+        <br/>
+      </div>
+    </div>
+    <!-- Info Window Div -->
+    <div id="infoWindow"></div>
+    <!-- Map Container Div -->
+    <div id="map1" class="col-md-12 map1"></div>
+    <!-- REDI Score Methodology & Data-->
+    <div class="row">
+      <div class="col-md-12 rediMethod">
+        
+        
+      </div>
+    </div>
+  </div><!-- /.container -->
+
+  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+  <script src ="https://code.jquery.com/jquery-2.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
